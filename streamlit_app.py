@@ -8,4 +8,8 @@ lista_de_fruta = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.c
 
 streamlit.dataframe(lista_de_fruta)
 
-streamlit.multiselect("Pick some fruits:",list(lista_de_fruta.Fruit))
+fruits_selected = streamlit.multiselect("Pick some fruits:",list(lista_de_fruta.Fruit),['Avocado','Apple'])
+
+fruits_to_show = fruits_selected.loc[fruits_selected]
+
+streamlit.dataframe(fruits_to_show)
