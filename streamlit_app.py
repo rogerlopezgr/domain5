@@ -1,5 +1,7 @@
 import streamlit
 
-streamlit.title('Título de ejemplo')
+import pandas
 
-streamlit.header('Subtítulo de ejemplo')
+lista_de_fruta = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+
+streamlit.dataframe(lista_de_fruta)
