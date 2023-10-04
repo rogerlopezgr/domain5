@@ -1,5 +1,5 @@
 import streamlit
 
-streamlit.title('Título de ejemplo')
+streamlit.title('Título de ejemplo');
 
 streamli.subtitle('Subtítulo de ejemplo')
